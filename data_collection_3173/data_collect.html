@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Serial: Data Collection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <h1 id="serial-error" style="background-color: red"></h1>
+    <div class="repo-link">
+      <a href="">GitHub Repo</a>
+    </div>
+    <section class="elements" id="main-list">
+      <div class="element">
+        <h2>Connect to a serial port</h2>
+        <button id="connect-to-serial">Connect</button>
+      </div>
+      <br>
+      <div class="element">
+        <button id="disconnect-serial">Disconnect</button>
+      </div>
+      <br>
+      <div class="element">
+        <label for="fname">Sample number:</label>
+        <input type="text" id="sample-num"><br>
+        <button id="set-sample-num">Set sample number</button>  
+      </div>
+      <br>
+      <div class="element">
+        <label for="fname">Sample label:</label>
+        <input type="text" id="sample-label"><br>
+        <button id="set-sample-label">Set sample label</button>  
+      </div>
+      <div class="element">
+        <h2>Serial messages:</h2>
+        <ol id="serial-messages-container"></ol>
+        <textarea id="message-log" rows="4" cols="50">EOMEOMEOM</textarea>
+      </div>
+    </section>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="handler.js" type="module"></script>
+</body>
+</html>

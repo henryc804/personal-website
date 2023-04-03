@@ -1,0 +1,19 @@
+.displayValues {
+  height: 30em;
+  width: 15em;
+}
+
+canvas {
+  width:50em !important;
+  height:30em !important;
+  flex: 5;
+}
+
+textarea {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+}
+
